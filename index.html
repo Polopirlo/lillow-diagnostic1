@@ -1028,7 +1028,13 @@ function buildResult() {
   H +=     '<div class="product-price" style="color:#3D3580;">49,80\u20ac</div>';
 
   H +=     '<div class="product-just">' + p.justif + '</div>';
-  H +=     '<button class="btn-cta" onclick="try{fbq(\'trackCustom\',\'PurchaseClick\');}catch(e){}addCure3Mois()" style="margin-top:16px;">\uD83D\uDED2 Profiter de l\u2019offre 2+1 gratuit \u2014 49,80\u20ac</button>';
+  H +=     '<div style="border-left:3px solid #C96014;background:#FDF6EE;border-radius:0 10px 10px 0;padding:16px 20px;margin-top:20px;margin-bottom:20px;">';
+  H +=       '<p style="font-size:14px;font-weight:600;color:#5D3A1A;margin:0;line-height:1.7;">';
+  H +=         'Chaque flacon est formul\u00e9 en petit lot pour pr\u00e9server la concentration en <em>Cyperus Rotundus</em> actif.<br>';
+  H +=         'Le lot en cours est presque \u00e9puis\u00e9\u00a0\u2014 le prochain r\u00e9approvisionnement est pr\u00e9vu dans 3\u00a0semaines.';
+  H +=       '</p>';
+  H +=     '</div>';
+  H +=     '<button onclick="try{fbq(\'trackCustom\',\'PurchaseClick\');}catch(e){}window.parent.postMessage(\'closeQuiz\',\'*\');" onmousedown="window.parent.postMessage(\'closeQuiz\',\'*\');" ontouchstart="try{fbq(\'trackCustom\',\'PurchaseClick\');}catch(e){}window.parent.postMessage(\'closeQuiz\',\'*\');" style="display:block;width:100%;background:#3D3580;color:#fff;padding:18px;border-radius:12px;font-size:17px;font-weight:700;border:none;cursor:pointer;margin-top:4px;letter-spacing:0.2px;box-shadow:0 6px 24px rgba(61,53,128,0.35);">Profiter de l\u2019offre maintenant \u2192</button>';
   H +=     '<div class="reassurances">';
   H +=       '<span class="reassurance-item">Livraison offerte</span>';
   H +=       '<span class="reassurance-item">Satisfaite ou rembours\u00e9e 30 jours</span>';
